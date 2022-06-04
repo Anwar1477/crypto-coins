@@ -9,6 +9,7 @@ import About from './components/About/About';
 import CoinDetails from './components/CoinDetails/CoinDetails';
 import BdAddress from './components/Contact/BdAddress'
 import UsAddress from './components/Contact/UsAddress'
+import NotFound from './components/NotFound/NotFound'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='bd-address' element={<BdAddress />} />
           <Route path='us-address' element={<UsAddress />} />
         </Route>
+        <Route path='*' element={<NotFound />} />
         <Route path='/about' element={<About />}></Route>
         
       </Routes>
